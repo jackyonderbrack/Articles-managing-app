@@ -1,3 +1,5 @@
+import { Button } from "react-bootstrap";
+import EditArticle from "./EditArticle";
 
 interface ArticleProps {
     id: number;
@@ -10,13 +12,15 @@ interface ArticleProps {
 const Article: React.FC<ArticleProps> = ({id, title, content, image, author}) => {
 
     return (
-        
+            
             <div className="article">
+                
                 <img src={image} alt="" />
                 <h2 key={id}>{title}</h2>
                 <p>{content}</p>
-                <button>Czytaj dalej</button>
+                <EditArticle />
                 <p>by: <b>{author}</b></p>
+                
                 
             </div>
     
