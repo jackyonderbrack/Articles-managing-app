@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TopNavbar from './components/TopNavbar';
+import ArticlesList from './components/ArticlesList';
+import { useState, useEffect } from 'react'
+import axios from 'axios';
+
+
 
 function App() {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+      axios.get('http://localhost:3001/articles').then(res => {
+        setArticles(res.data);
+      });
+    }, []);     
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<div>
+  <TopNavbar user="Admin" newTitle=''/>
+  <ArticlesList articlesList={articles}/>
+    
+</div>
+   
   );
 }
 

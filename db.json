@@ -1,0 +1,28 @@
+{
+    "articles": [
+      {
+        "id": 1,
+        "title": "Spływ kajakowy",
+        "image": "https://via.placeholder.com/200",
+        "author": "Mike Elakai",
+        "content": "Kolega zaprosił mnie na wyjazd inny niż zwykle. Na ten musiałem(...)",
+        "date": "2012-04-23T18:25:43.511Z"  
+      },
+      {
+        "id": 2,
+        "title": "Wycieczka w góry",
+        "image": "https://via.placeholder.com/200",
+        "author": "Jack Yonderbrack",
+        "content": "Zawsze gdy czuję się nieswojo, źle, czy życie płata figle, na któr(...).",
+        "date": "2012-04-23T18:25:43.511Z"  
+      },
+      {
+        "id": 3,
+        "title": "Motocyklem w świat",
+        "image": "https://via.placeholder.com/200",
+        "author": "Michał Łuczak",
+        "content": "To było to, zakochałem się w nim od pierwszego spojrzenia. Agresywn(...).",
+        "date": "2012-04-23T18:25:43.511Z"  
+      }
+    ]
+  }
